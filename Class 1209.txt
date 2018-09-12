@@ -1,0 +1,46 @@
+class Hospital:
+    def __init__(self, doctor, patient, nurse, cleaner):
+        self.doctor = doctor
+        self.patient = patient
+        self.nurse = nurse
+        self.cleaner = cleaner
+
+    def new_doctor(self, name):
+        self.name = name
+        self.name.append(name)
+        print("The doctor's name:")
+
+    def new_patient(self, number):
+        self.number = number
+        self.number.append(number)
+        print("The patient's number:")
+
+    def new_nurse(self, room):
+        self.room = room
+        self.room.append(room)
+        print("The nurse's room:")
+
+    def new_cleaner(self, floor):
+        self.floor = floor
+        self.floor.append(floor)
+        print("The cleaner's floor:")
+
+
+"""class Doctor:
+    def __init__(self,name, speciality, room):
+        self.name = name
+        self.specialty = speciality
+        self.room = room
+
+    def add_doctor(self):
+        Doctor.number+=1
+        print(Doctor.number)"""
+
+
+
+hospital1 = Hospital(['Петров А.А.'], ['1'], ['234'], ['3'])
+
+hospital1.new_doctor('Васильев В.В.')
+hospital1.new_patient('2')
+hospital1.new_nurse('345')
+hospital1.new_cleaner('7')
